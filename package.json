@@ -18,5 +18,9 @@
   "scripts": {
     "test": "nodemon server",
     "start": "node server"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.24.5"
   }
 }
