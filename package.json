@@ -1,0 +1,22 @@
+{
+  "name": "kootah-url-shorter",
+  "version": "1.0.0",
+  "description": "this is URL shorter service named kootah",
+  "keywords": [
+    "kootah",
+    "URL",
+    "shorter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "kootah-URL-shorter"
+  },
+  "license": "MIT",
+  "author": "codeplus819-ah",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server",
+    "start": "node server"
+  }
+}
