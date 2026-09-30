@@ -1,0 +1,16 @@
+*{
+  color: white;
+}
+
+.form{
+  gap: 20px;
+}
+
+h1{
+  font-size: 3em;
+}
+
+p{
+  font-size: 1.1em;
+  text-align: justify;
+}

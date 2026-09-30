@@ -35,9 +35,7 @@ app.post('/api/add-address', async (req, res)=>{
 
 app.get('/:short', async (req, res)=>{
   const { short } = req.params;
-  console.log(short);
   const id = base62.decode(short);
-  console.log(id);
   const [result] = await pool.query("SELECT * FROM `urls` WHERE `id` = ?", [ id, ])
   return result && result.length > 0 ? res.redirect(result[0].real_address) : res.sendFile(path.join(__dirname, 'public', 'undefind.html'));
 });
