@@ -1,0 +1,47 @@
+body{
+  background: linear-gradient(to left, #0000ff, #002fff, #0099ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  background-color: #ffffff34;
+  width: 50%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 50%;
+  max-height: 500px;
+  min-height: 300px;
+  border: none;
+  border-radius: 50px;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, .btn{
+  width: 100%;
+  outline: none;
+}
+
+input{
+  padding: 10px 15px;
+  border: 1px solid #999;
+  border-radius: 2vh;
+}
+
+.logo{
+  width: 100px;
+  border-radius: 25vh;
+  margin-bottom: 10px;
+}
+
+.title{
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}

@@ -19,16 +19,18 @@ a:hover{
 }
 
 .btn{
-  background-color: #0051ff;
+  background-color: #00e29e;
   color: #ffffff;
   padding: 10px 15px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none !important;
+  font-size: 1.1em;
+  font-weight: bold;
   transition: .3s ease;
 }
 
 .btn:hover{
-  background-color: blue;
+  background-color: #00ca8e;
 }
