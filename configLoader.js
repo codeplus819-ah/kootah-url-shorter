@@ -21,6 +21,7 @@ module.exports = function loadConfig() {
         host: "localhost",
         username: "root",
         password: "",
+        dbname: "kootah",
         port: 3306
       }
     }

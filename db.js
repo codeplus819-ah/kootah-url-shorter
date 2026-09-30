@@ -8,6 +8,7 @@ const pool = db.createPool({
   user: config.database.username,
   password: config.database.password,
   port: config.database.port,
+  database: config.database.dbname,
   queueLimit: 10,
   connectionLimit: 10,
 });
