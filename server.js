@@ -4,6 +4,7 @@ const path = require('path');
 const crypto = require('crypto');
 const loadConfig = require('./configLoader');
 const pool = require('./db');
+const base62 = require('./base62')
 
 const config = loadConfig();
 const port = config.port;
