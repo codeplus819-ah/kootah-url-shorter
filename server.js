@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = config.server.port;
 const loadConfig = require('./configLoader');
 
 const config = loadConfig();
