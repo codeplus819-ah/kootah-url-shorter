@@ -11,12 +11,7 @@ module.exports = function loadConfig() {
     }
   } else {
     const defaultConfig = {
-      security: {
-        ssl: false
-      },
-      server: {
-        port: 8080
-      },
+      port: 8080,
       database: {
         host: "localhost",
         username: "root",

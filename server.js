@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const port = config.server.port;
 const loadConfig = require('./configLoader');
 
 const config = loadConfig();
+const port = config.port;
 
 app.get('/', (req, res) => {
   res.send("test");

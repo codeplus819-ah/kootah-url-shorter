@@ -1,1 +1,1 @@
-{"security":{"ssl":false},"server":{"port":8080},"database":{"host":"localhost","username":"root","password":"","dbname":"kootah","port":3306}}
+{"port":8080,"database":{"host":"localhost","username":"root","password":"","dbname":"kootah","port":3306}}
