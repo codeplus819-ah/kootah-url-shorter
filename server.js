@@ -17,16 +17,16 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/add-address', async (req, res)=>{
-  const { address, expiresAt } = req.body;
+  const { address, } = req.body;
   if (address) {
     const [result] = await pool.query("SELECT * FROM `urls` WHERE `real_address` = ?", [ address, ])
     if (result && result.length > 0) {
       const short = base62.encode(result[0].id);
-      return res.status(200).json({ status: 'success', shortAddress: `/${short}` })
+      return res.status(200).json({ status: 'success', shortAddress: `${short}` })
     } else {
       const [added] = await pool.query("INSERT INTO `urls`(`real_address`) VALUES (?)", [address]);
       const short = base62.encode(added.insertId);
-      return res.status(200).json({ status: 'success', shortAddress: `/${short}` })
+      return res.status(200).json({ status: 'success', shortAddress: `${short}` })
     }
   } else {
     return res.status(422).json({ status: 'error' });
@@ -35,7 +35,9 @@ app.post('/api/add-address', async (req, res)=>{
 
 app.get('/:short', async (req, res)=>{
   const { short } = req.params;
+  console.log(short);
   const id = base62.decode(short);
+  console.log(id);
   const [result] = await pool.query("SELECT * FROM `urls` WHERE `id` = ?", [ id, ])
   return result && result.length > 0 ? res.redirect(result[0].real_address) : res.sendFile(path.join(__dirname, 'public', 'undefind.html'));
 });
