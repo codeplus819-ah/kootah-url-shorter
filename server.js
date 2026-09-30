@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 8080;
+const loadConfig = require('./configLoader');
+
+const config = loadConfig();
 
 app.get('/', (req, res) => {
   res.send("test");
