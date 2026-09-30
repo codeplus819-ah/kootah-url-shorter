@@ -1,1 +1,1 @@
-{"security":{"ssl":false},"server":{"port":8080},"database":{"username":"root","password":"","port":3306}}
+{"security":{"ssl":false},"server":{"port":8080},"database":{"host":"localhost","username":"root","password":"","port":3306}}

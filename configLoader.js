@@ -18,6 +18,7 @@ module.exports = function loadConfig() {
         port: 8080
       },
       database: {
+        host: "localhost",
         username: "root",
         password: "",
         port: 3306
